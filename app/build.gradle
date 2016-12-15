@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "net.test.runtimetranslator"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.000.00.1[ALPHA_1]"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:24.1.1'
+    compile project(path: ':rrt')
+}

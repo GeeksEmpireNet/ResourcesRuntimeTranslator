@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Runtime Translator</string>
+    <string name="info">Information</string>
+    <string name="desc">DESCRIPTION</string>
+    <string name="zero">ZERO</string>
+    <string name="one">ONE</string>
+    <string name="two">TWO</string>
+    <string name="empire">Empire</string>
+
+</resources>
